@@ -1,4 +1,4 @@
-CXX = g++ -std=c++17
+CXX = g++ -std=c++17 -O3
 
 BIN = bv2nii
 SRC_DIR = ./src
@@ -15,7 +15,9 @@ OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(SRCS))
 GCCFLAGS = -I./src
 GCCFLAGS += -I$(GLM_DIR) -I$(NIFTI_DIR) -I$(ARGUM_DIR)
 
-LIBS += -L./nifti_clib -lniftiio -lznz -lz
+
+LIBS += -L./nifti_clib -lniftiio -lznz
+LIBS += -L./zlib -lz
 LIBS += -L./argumentum/lib -largumentum
 
 $(BIN): $(OBJS)	

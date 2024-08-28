@@ -20,4 +20,6 @@ NIfTI-1 C library: https://nifti.nimh.nih.gov/nifti-1/
 
 Argumentum: https://github.com/mmahnic/argumentum
 
+CloudFlare version of zlib: https://github.com/cloudflare/zlib
+
 Due to copyright issues, only main files are provided.

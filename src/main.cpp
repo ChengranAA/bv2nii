@@ -304,7 +304,7 @@ void fmr2nii(app_config current_config)
         nim->data = new float[nim->nvox];
 
         float *dest_ptr = static_cast<float *>(nim->data);
-
+        
         for (const auto &volume : new_fmr.STCData)
         {
             std::memcpy(dest_ptr, volume.data(), volume.size() * sizeof(float));
