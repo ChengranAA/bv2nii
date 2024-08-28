@@ -224,6 +224,7 @@ void vmr2nii(app_config current_config)
         VMR new_vmr;
 
         std::uint8_t *uint8Data = data_to_uint8(nim);
+        if (uint8Data == nullptr) exit(1);
 
         Volume tmp = Volume<std::uint8_t>(nim->nx, nim->ny, nim->nx, 0);
         tmp.copyData(uint8Data);
@@ -271,6 +272,7 @@ void v162nii(app_config current_config)
         V16 new_v16;
 
         std::uint16_t *uint16Data = data_to_uint16(nim);
+        if (uint16Data == nullptr) exit(1);
 
         Volume tmp = Volume<std::uint16_t>(nim->nx, nim->ny, nim->nx, 0);
         tmp.copyData(uint16Data);
@@ -325,6 +327,7 @@ void fmr2nii(app_config current_config)
         if (!std::filesystem::exists(current_config.file_out)) std::cerr << "FMR file not found" << std::endl;
 
         float* float32data = data_to_float(nim);
+        if (float32data == nullptr) exit(1);
         std::vector<Volume<float>> STCData(nim->nt, Volume<float>(nim->nx, nim->ny, nim->nz));
 
         for (int t = 0; t < nim->nt; ++t) {
