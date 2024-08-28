@@ -7,7 +7,7 @@ A compiled version of a CLI file converter from BrainVoyager's format to NIfTI f
 | ----------- | -------- | ---------- |
 | VMR         | YES      | YES        |
 | V16         | YES      | YES        |
-| FMR         | YES      | Yes        |
+| FMR         | YES      | YES        |
 | VTC         | NO       | NO         |
 
 Note: For FMR conversion, a FMR file is needed and the data will be stored into its cooresponding STC file. 
