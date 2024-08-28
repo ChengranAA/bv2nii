@@ -1,7 +1,7 @@
 # BV2NII (experimental)
 
 ## Description
-A compiled version of a CLI file converter from BrainVoyager's format to NIfTI format written in C++. (more of a practice project)
+A compiled version of a CLI file converter from BrainVoyager's format to NIfTI format written in C++ (more of a practice project).
 
 | File Format | To NIFTI | From NIFTI |
 | ----------- | -------- | ---------- |
@@ -10,7 +10,7 @@ A compiled version of a CLI file converter from BrainVoyager's format to NIfTI f
 | FMR         | YES      | Yes        |
 | VTC         | NO       | NO         |
 
-Note: For FMR conversion, a FMR file are needed and the data will be stored into its cooresponding STC file. 
+Note: For FMR conversion, a FMR file is needed and the data will be stored into its cooresponding STC file. 
 
 ## Dependencies
 
