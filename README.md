@@ -6,7 +6,7 @@ A compiled version of a CLI file converter from BrainVoyager's format to NIfTI f
 | File Format | To NIFTI | From NIFTI |
 | ----------- | -------- | ---------- |
 | VMR         | YES      | YES        |
-| V16         | NO       | NO         |
+| V16         | YES      | YES        |
 | FMR         | YES      | Yes        |
 | VTC         | NO       | NO         |
 
