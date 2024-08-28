@@ -1,7 +1,7 @@
 # BV2NII (experimental)
 
 ## Description
-A compiled version of a CLI file converter from BrainVoyager's format to NIfTI format written in C++ (more of a practice project).
+A compiled CLI tool for file conversion between BrainVoyager's format and NIfTI format written in C++ (more of a practice project).
 
 | File Format | To NIFTI | From NIFTI |
 | ----------- | -------- | ---------- |
